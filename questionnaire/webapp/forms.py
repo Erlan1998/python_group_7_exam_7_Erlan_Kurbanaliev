@@ -1,5 +1,5 @@
 from django import forms
-from webapp.models import Poll
+from webapp.models import Poll, Choice
 
 
 class PollForm(forms.ModelForm):
@@ -12,3 +12,9 @@ class PollForm(forms.ModelForm):
 class SearchForm(forms.Form):
     search_value = forms.CharField(max_length=100, required=False, label='Найти')
 
+
+class ChoiceForm(forms.ModelForm):
+
+    class Meta:
+        model = Choice
+        fields = ['answer']

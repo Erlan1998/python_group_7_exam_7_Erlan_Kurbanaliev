@@ -3,5 +3,9 @@ from webapp.views.question import (
     QuestionView,
     QuestionCreate,
     QuestionUpdateView,
-    QuestionDeleteView
+    QuestionDeleteView,
+)
+
+from webapp.views.choice import (
+    ChoiceAddView,
 )
