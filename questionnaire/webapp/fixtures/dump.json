@@ -1,0 +1,68 @@
+[
+{
+  "model": "webapp.poll",
+  "pk": 1,
+  "fields": {
+    "question": "В каком году Гагарин полетел в космос?",
+    "created_date": "2021-04-03T06:46:37.891Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 2,
+  "fields": {
+    "question": "Кто обитает на дне океана?",
+    "created_date": "2021-04-03T06:48:07.847Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 3,
+  "fields": {
+    "question": "Кто  вечный Пезидент России?",
+    "created_date": "2021-04-03T06:53:16.675Z"
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 1,
+  "fields": {
+    "answer": "1961году Гагарин полетел в космос!",
+    "poll": 1
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 2,
+  "fields": {
+    "answer": "Лахневское чудавище!",
+    "poll": 2
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 3,
+  "fields": {
+    "answer": "Жириновский",
+    "poll": 3
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$cab8zIOAq2yt$KtwjFZABdU2FjUKLMLqgbZcUTVH2jzeaDGly+hwEgFo=",
+    "last_login": "2021-04-03T06:41:56.282Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@mail.ru",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-04-03T06:41:42.390Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
