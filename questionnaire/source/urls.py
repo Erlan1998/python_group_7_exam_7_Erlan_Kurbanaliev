@@ -22,6 +22,8 @@ from webapp.views import (
     QuestionUpdateView,
     QuestionDeleteView,
     ChoiceAddView,
+    ChoiceUpdateView,
+    ChoiceDeleteView,
 )
 
 urlpatterns = [
@@ -33,4 +35,6 @@ urlpatterns = [
     path('question/<int:id>/delete/', QuestionDeleteView.as_view(), name='question_delete'),
 
     path('question/<int:id>/choice/add/', ChoiceAddView.as_view(), name='choice_add'),
+    path('choice/<int:id>/update/', ChoiceUpdateView.as_view(), name='choice_update'),
+    path('choice/<int:id>/delete', ChoiceDeleteView.as_view(), name='choice_delete'),
 ]

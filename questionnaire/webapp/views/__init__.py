@@ -8,4 +8,6 @@ from webapp.views.question import (
 
 from webapp.views.choice import (
     ChoiceAddView,
+    ChoiceUpdateView,
+    ChoiceDeleteView
 )

@@ -23,8 +23,8 @@
                       <h5 class="mb-1">{{ choic.answer }}</h5>
 {#                      <small class="text-muted">{{ list.created_at }}</small>#}
                     </div>
-{#                    <p class="mb-1">Статус: {{ list.status }}</p>#}
-{#                    <p class="mb-1">Тип: {% for i in list.tip.all %}{{ i }}{% if not forloop.last %}, {% endif %}{% endfor %}</p>#}
+                <a href="{% url 'choice_update' choic.id %}"><button type="button" class="btn btn-warning">Редактировать!</button></a>
+                <a href="{% url 'choice_delete' choic.id %}"><button type="button" class="btn btn-secondary">Удаление!</button></a>
                 </div>
                 </br>
             {% endfor %}
