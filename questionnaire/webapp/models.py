@@ -24,3 +24,17 @@ class Choice(models.Model):
 
     def __str__(self):
         return f'{self.id}. {self.answer}: {self.poll}'
+
+
+class Answer(models.Model):
+    poll = models.ForeignKey('webapp.Poll', related_name='Answers', on_delete=models.CASCADE)
+    created_date = models.DateTimeField(auto_now_add=True)
+    choice = models.ForeignKey('webapp.Choice', related_name='Answers', on_delete=models.CASCADE)
+
+    class Meta:
+        db_table = 'Answers'
+        verbose_name = 'Ответ'
+        verbose_name_plural = 'Ответы'
+
+    def __str__(self):
+        return f'{self.id}. {self.poll}: {self.choice}'

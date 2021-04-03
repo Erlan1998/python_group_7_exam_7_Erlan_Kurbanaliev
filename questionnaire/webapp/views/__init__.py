@@ -11,3 +11,5 @@ from webapp.views.choice import (
     ChoiceUpdateView,
     ChoiceDeleteView
 )
+
+from webapp.views.answers import AnswerAddView

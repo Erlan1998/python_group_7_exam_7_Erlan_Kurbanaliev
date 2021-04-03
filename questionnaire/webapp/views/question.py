@@ -49,7 +49,6 @@ class QuestionView(DetailView):
     model = Poll
     pk_url_kwarg = 'id'
     context_object_name = 'poll'
-    # paginate_by = 3
 
 
 class QuestionCreate(CreateView):
