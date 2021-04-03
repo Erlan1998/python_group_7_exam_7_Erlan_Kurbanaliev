@@ -24,6 +24,38 @@
   }
 },
 {
+  "model": "webapp.poll",
+  "pk": 5,
+  "fields": {
+    "question": "Земля имеет форму?",
+    "created_date": "2021-04-03T08:15:05.912Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 9,
+  "fields": {
+    "question": "Самая быстрая Машина?",
+    "created_date": "2021-04-03T12:45:55.148Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 10,
+  "fields": {
+    "question": "Легенда Футбола?",
+    "created_date": "2021-04-03T12:46:39.149Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 11,
+  "fields": {
+    "question": "Самое глубокое место на планете?",
+    "created_date": "2021-04-03T12:47:29.642Z"
+  }
+},
+{
   "model": "webapp.choice",
   "pk": 1,
   "fields": {
@@ -45,6 +77,193 @@
   "fields": {
     "answer": "Жириновский",
     "poll": 3
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 11,
+  "fields": {
+    "answer": "Овала",
+    "poll": 5
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 12,
+  "fields": {
+    "answer": "Круга",
+    "poll": 5
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 13,
+  "fields": {
+    "answer": "Квадрата",
+    "poll": 5
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 14,
+  "fields": {
+    "answer": "Плоская",
+    "poll": 5
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 15,
+  "fields": {
+    "answer": "Путин",
+    "poll": 3
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 16,
+  "fields": {
+    "answer": "Медведев",
+    "poll": 3
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 17,
+  "fields": {
+    "answer": "Спанч-Боб",
+    "poll": 2
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 18,
+  "fields": {
+    "answer": "Мамонты",
+    "poll": 2
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 19,
+  "fields": {
+    "answer": "1970!",
+    "poll": 1
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 20,
+  "fields": {
+    "answer": "1965!",
+    "poll": 1
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 21,
+  "fields": {
+    "answer": "Ламборгини",
+    "poll": 9
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 22,
+  "fields": {
+    "answer": "Феррари",
+    "poll": 9
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 23,
+  "fields": {
+    "answer": "Мерседес",
+    "poll": 9
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 24,
+  "fields": {
+    "answer": "Месси!",
+    "poll": 10
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 25,
+  "fields": {
+    "answer": "Роналду!",
+    "poll": 10
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 26,
+  "fields": {
+    "answer": "Бекхэм",
+    "poll": 10
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 27,
+  "fields": {
+    "answer": "Эверест!",
+    "poll": 11
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 28,
+  "fields": {
+    "answer": "Марианская впадина!",
+    "poll": 11
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 29,
+  "fields": {
+    "answer": "пппаппаа",
+    "poll": 11
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 30,
+  "fields": {
+    "answer": "вмымвымывмв",
+    "poll": 11
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 4,
+  "fields": {
+    "poll": 11,
+    "created_date": "2021-04-03T12:55:21.693Z",
+    "choice": 28
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 5,
+  "fields": {
+    "poll": 10,
+    "created_date": "2021-04-03T12:55:32.443Z",
+    "choice": 24
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 6,
+  "fields": {
+    "poll": 3,
+    "created_date": "2021-04-03T12:55:48.613Z",
+    "choice": 15
   }
 },
 {
