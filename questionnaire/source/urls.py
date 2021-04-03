@@ -15,7 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from webapp.views import (
+    IndexViewQuestion,
+    QuestionView,
+    QuestionCreate
+)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', IndexViewQuestion.as_view(), name='index_question'),
+    path('question/<int:id>/', QuestionView.as_view(), name='poll'),
+    path('project/create/', QuestionCreate.as_view(), name='question_create'),
 ]
