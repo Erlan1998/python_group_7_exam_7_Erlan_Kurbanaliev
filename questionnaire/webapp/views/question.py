@@ -38,11 +38,23 @@ class QuestionView(DetailView):
 
 
 class QuestionCreate(CreateView):
-    template_name = 'question/create.html'
+    template_name = 'question/create_question.html'
     form_class = PollForm
     model = Poll
 
     def get_success_url(self):
         return reverse('poll', kwargs={'id': self.object.id})
+
+
+class QuestionUpdateView(UpdateView):
+    template_name = 'question/update_question.html'
+    model = Poll
+    form_class = PollForm
+    context_object_name = 'poll'
+    pk_url_kwarg = 'id'
+
+    def get_success_url(self):
+        return reverse('poll', kwargs={'id': self.object.id})
+
 
 

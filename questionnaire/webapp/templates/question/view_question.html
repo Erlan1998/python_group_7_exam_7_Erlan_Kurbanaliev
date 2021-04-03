@@ -8,7 +8,7 @@
         <p>Name: {{ poll.question }}</p>
         <p>Date of creation: {{ poll.created_date }}</p>
 {#        <a href="{% url 'project_delete' project.id %}"><button type="button" class="btn btn-secondary">Удаление!</button></a>#}
-{#        <a href="{% url 'project_update' project.id %}"><button type="button" class="btn btn-warning">Редактировать!</button></a>#}
+        <a href="{% url 'question_update' poll.id %}"><button type="button" class="btn btn-warning">Редактировать!</button></a>
 {#        <a href="{% url 'task_add' project.id %}"><button type="button" class="btn btn-warning">Создать задачу!</button></a>#}
 
         {% if not poll.Choices.all %}

@@ -18,12 +18,14 @@ from django.urls import path
 from webapp.views import (
     IndexViewQuestion,
     QuestionView,
-    QuestionCreate
+    QuestionCreate,
+    QuestionUpdateView
 )
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', IndexViewQuestion.as_view(), name='index_question'),
     path('question/<int:id>/', QuestionView.as_view(), name='poll'),
-    path('project/create/', QuestionCreate.as_view(), name='question_create'),
+    path('question/create/', QuestionCreate.as_view(), name='question_create'),
+    path('question/<int:id>/update/', QuestionUpdateView.as_view(), name='question_update'),
 ]
